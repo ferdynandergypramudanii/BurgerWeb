@@ -35,6 +35,8 @@
   </head>
 
   <body>
+    <!-- Navbar -->
+
     <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
       <nav class="container relative h-14 flex justify-between items-center">
         <div>
@@ -108,10 +110,16 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
+
       <section id="home">
         <div class="container flex flex-col items-center gap-10 md:flex-row">
           <div class="mx-auto md:basis-1/2 lg:basis-2/5">
-            <img src="./img/home-image.png" alt="home image" class="w-60 md:w-full animate-movingY" />
+            <img
+              src="./img/home-image.png"
+              alt="home image"
+              class="w-60 md:w-full animate-movingY"
+            />
           </div>
 
           <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
@@ -128,9 +136,13 @@
               quibusdam!
             </p>
 
-            <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+            <div
+              class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20"
+            >
               <div class="text-center">
-                <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+                <i
+                  class="fa-solid fa-utensils text-secondaryColor text-4xl"
+                ></i>
                 <br />
                 Delicious
               </div>
@@ -149,10 +161,63 @@
             </div>
 
             <a href="#" class="btn btn-primary text-blackColor">learn more</a>
-
           </div>
         </div>
       </section>
+
+      <!-- Category Section -->
+      <section id="category">
+        <div class="container flex flex-col gap-5 md:flex-row ">
+          <!-- card 1 -->
+          <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="./img/burger-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Food</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="" class="text-blackColor cursor-pointer" > Buy online</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="./img/snack-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Snack</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="" class="text-secondaryColor cursor-pointer" > Buy online</a>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="./img/beverage-2.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Beverage</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="" class="text-secondaryColor cursor-pointer" > Buy online</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- Main.js -->
