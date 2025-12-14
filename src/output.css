@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(1 10 94 / var(--tw-bg-opacity, 1));
@@ -622,6 +626,10 @@ section {
   left: -1rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -636,6 +644,10 @@ section {
 
 .top-\[0\.7rem\] {
   top: 0.7rem;
+}
+
+.-bottom-1\/2 {
+  bottom: -50%;
 }
 
 .z-50 {
@@ -665,6 +677,10 @@ section {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -1010,6 +1026,12 @@ section {
   color: rgb(255 204 0 / var(--tw-text-opacity, 1));
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1101,6 +1123,11 @@ section {
   background-color: rgb(255 204 0 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:translate-y-1:hover {
