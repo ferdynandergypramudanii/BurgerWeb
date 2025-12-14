@@ -82,13 +82,13 @@ function darkMode() {
   html.classList.add("dark");
   themeBtn.classList.replace("ri-moon-line", "ri-sun-line");
   localStorage.setItem("mode", "dark");
-};
+}
 
 function lightMode() {
   html.classList.remove("dark");
   themeBtn.classList.replace("ri-sun-line", "ri-moon-line");
   localStorage.setItem("mode", "light");
-};
+}
 
 // Show Scroll UP
 const scrollUp = () => {
@@ -117,3 +117,28 @@ const scrollHeader = () => {
 };
 
 window.addEventListener("scroll", scrollHeader);
+
+// Scroll selection active link
+const activeLink = () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav__link");
+
+  let current = "home";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (window.scrollY >= sectionTop - 60) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((item) => {
+    item.classList.remove("text-secondaryColor");
+    if (item.href.includes(current)) {
+      item.classList.add("text-secondaryColor");
+    }
+  });
+};
+
+window.addEventListener('scroll', activeLink)
